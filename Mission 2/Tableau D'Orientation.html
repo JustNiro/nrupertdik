@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+             width: 70%;
+             border-collapse: collapse;
+             margin: 0 auto;
+             border: 2px solid blue;
+        }
+
+        th {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        td{
+            padding: 15px;
+            border: 1px solid blue;
+            text-align: left;
+        }
+        
+        img{
+            width: 100px;
+            height: auto;
+        }
+
+        .center{
+            text-align: center;
+        }
+
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: lightgrey;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <th colspan="2" class="center">Recherche de Stage de BTS:</th>
+        </tr>
+        <tr>
+          <th colspan="2" class="center">Période du stage : Du 2 Juin au 4 Juillet 2025</th>
+        </tr>
+            <tr> 
+                <td rowspan="3"> <img src="Images3/Logo du Lycée Parc de Vilgénis.jpg"> 
+                </tr>
+            <tr> 
+                <td>Contacter une entrprise</td>
+            </tr>
+            <tr> 
+                <td>Remplir la feuille d'engagement (à Télécharger sur l'ENT)</td>
+            </tr>
+            <tr> <td rowspan="5"> <img src="Images3/Logo BTS SIO.png"> </tr>
+            <tr> 
+                <td> Signature du responsable d'entreprise</td>
+            </tr>
+            <tr> 
+                <td> Signature du Tuteur (Votre Professeur)</td>
+            </tr>
+            <tr> 
+                <td> Délivérance de la convention de stage</td>
+            </tr>
+    </table>
+<h2>Formulaire d'inscription</h2>
+
+<form action="#" method="post">
+    <!-- Nom -->
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" required><br><br>
+
+    <!-- Prénom -->
+    <label for="prenom">Prénom :</label>
+    <input type="text" id="prenom" name="prenom" required><br><br>
+
+    <!-- Date de naissance -->
+    <label for="date_naissance">Date de naissance :</label>
+    <input type="date" id="date_naissance" name="date_naissance" required><br><br>
+
+    <!-- Adresse postale -->
+    <label for="adresse">Adresse postale :</label><br>
+    <textarea id="adresse" name="adresse" rows="4" cols="50" required></textarea><br><br>
+
+    <!-- Classe -->
+    <label for="classe">Classe :</label>
+    <select id="classe" name="classe" required>
+        <option value="">--Choisir une classe--</option>
+        <option value="bts1">BTS 1</option>
+        <option value="bts2">BTS 2</option>
+        <option value="l3">L3</option>
+    </select><br><br>
+
+    <!-- Boutons Valider et Annuler -->
+    <input type="submit" value="Valider">
+    <input type="reset" value="Annuler">
+</form>
+
+
+</body>
+</html>
