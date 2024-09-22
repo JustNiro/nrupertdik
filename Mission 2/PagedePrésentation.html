@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Page personnelle de Rupert-Diknes Nirojan, étudiant en BTS SIO, passionné de technologies et de projets innovants.">
-    <title>Rupert-Diknes Nirojan</title>
+    <meta name="keywords" content="Rupert-Diknes Nirojan, BTS SIO, Informatique, Jeux vidéo, Compétences HTML, Python, SQL">
+    <meta name="author" content="Rupert-Diknes Nirojan">
+    <title>Rupert-Diknes Nirojan - Étudiant en BTS SIO</title>
     <style>
         body {
             background-color: #4EABB8;
@@ -13,37 +15,61 @@
             margin: 0;
             padding: 0;
         }
-        header, main {
+
+        header {
+            background-color: #333;
+            padding: 20px;
             text-align: center;
-            margin-bottom: 20px;
         }
+
         header h1 {
             font-size: 2.5em;
             color: #fff;
+            margin: 0;
         }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            text-align: center;
+        }
+
         img {
-            max-width: 40%;
+            max-width: 200px;
             height: auto;
-            border-radius: 8px;
+            border-radius: 50%;
+            margin-bottom: 20px;
         }
+
         .presentation p {
             max-width: 600px;
-            margin: 0 auto;
             font-size: 1.2em;
             line-height: 1.6;
+            margin: 20px 0;
         }
-        .competences {
+
+        section {
             background-color: #fff;
+            margin: 20px auto;
             padding: 20px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
-        .competences h2 {
+
+        section h2 {
             color: #4EABB8;
+            margin-bottom: 20px;
         }
-        .competences ul {
+
+        ul {
             list-style-type: none;
             padding: 0;
         }
-        .competences ul li {
+
+        ul li {
             font-size: 1.2em;
             margin: 10px 0;
         }
@@ -55,20 +81,24 @@
     </header>
 
     <main class="presentation">
-        <img src="Images3/BlackGokuRoseHD_FondEcran.jpg" alt="Photo de profil de Rupert-Diknes Nirojan">
+        <img src="Images3/BlackGokuRoseHD_FondEcran.jpg" alt="Photo de Rupert-Diknes Nirojan">
         <p>Je suis un étudiant en BTS SIO (Services Informatiques aux Organisations). J'adore apprendre de nouvelles technologies et travailler sur des projets innovants. Dans mon temps libre, je joue aux jeux vidéo et je fais du sport (volley et musculation).</p>
     </main>
 
-    <section class="Mes Centres D'intérêts">
+    <section class="interests">
         <h2>Mes centres d'intérêts</h2>
-            <li> Jeux vidéo, Animé </li>
-            <li> Sport, Informatique</li>
+        <ul>
+            <li>Jeux vidéo, Animé</li>
+            <li>Sport, Informatique</li>
+        </ul>
     </section>
 
-    <section class="Mes competences">
+    <section class="competences">
         <h2>Mes compétences</h2>
-            <li> HTML, CSS </li>
-            <li> Python, SQL </li>
+        <ul>
+            <li>HTML, CSS</li>
+            <li>Python, SQL</li>
+        </ul>
     </section>
 </body>
 </html>
